@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="Sector.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="Main">
+        <header>
+            <div class="first-icon icons"><i class="fa-solid fa-info"></i></div>
+            <div class="text">Player Now</div>
+            <div class="second-icon icons"><i class="fa-solid fa-sliders" id="toggle" onclick="slide()"></i></div>
+        </header>
+        <main>
+            <div class="circle"><img src="img/sari.jpg" class="getImg"></div>
+            <div class="song">
+                <h2 class="songNameFull">Sari Duniya Jalaa Denge</h2>
+                <h4 class="songArtiest"> Ft.Jaani</h4>
+            </div>
+            <div class="time">
+                <span class="start">00:00</span>
+                <span class="end">03:02
+                </span>
+            </div>
+            <div class="seek">
+                <div class="bar"><span class="seek1"></span></div>
+            </div>
+        </main>
+        <footer>
+            <div class="btn"><button id="previus"><i class="fa-solid fa-backward-step "></i></button></div>
+            <div class="btn"><button><i id="backward" class="fa-solid fa-backward" ></i></button></div>
+            <div class="btn"><button ><i id="playBtn" class="fa-solid fa-play" ></i></button></div>
+            <div class="btn"><button><i id="forward"class="fa-solid fa-forward"></i></button></div>
+            <div class="btn"><button id="nextSong"><i class="fa-solid fa-forward-step"></i></button></div>
+        </footer>
+        <div class="volume"><button><i class="fa-solid fa-volume-high"></i></button>
+        
+            <input type="range" id="volume" min="0" value="10" max="100"></div>
+            <div class="repeat"><button id="repeatBtn"><i class="fa-solid fa-repeat"></i></button></div>
+    </div>
+    <div class="slider">
+        <div class="header1">
+            <div class="circle1" ><img src="img/sari.jpg" class="getImg1"></div>
+            <div class="crossIcon icons"><i class="fa-solid fa-xmark" onclick="slide()"></i></div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button ><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button ><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button ><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button ><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="songList">
+            <div class="songNames">tu Jaane Na</div>
+            <div class="iconPlayAndAdd">
+                <button ><i class="fa-solid fa-play makeAllPlay" ></i></button>
+                <button class="heartBtn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+        
+    </div>
+ <script src="js.js">
+ </script>
+</body>
+</html>

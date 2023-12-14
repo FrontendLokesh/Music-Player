@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #686868;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.Main{
+    position: relative;
+    width:25%;
+    height:90vh;
+    /* border:2px solid white; */
+    background-color:#878585;
+    border-radius:10px;
+    box-shadow: rgb(0, 0 ,0, 0.5);
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: block;
+    /* opacity: 1; */
+    transition: all 0.2s linear;
+    
+    
+}
+header{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    color:#fff;
+}
+ .icons{
+    margin-top: 5px;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    width:40px;
+    height: 40px;
+    background-color: black;
+     border-radius: 50%;
+     box-sizing: border-box;
+     cursor: pointer;
+     color:#fff;
+    }
+    header .first-icon{
+        padding-left:15px;
+        padding-top:10px;
+        
+    }
+    header .second-icon{
+    padding-left:12px;
+    padding-top:10px;
+    
+}
+header .text{
+    font-weight: 600;
+    margin:15px;
+}
+
+main .circle{
+    width: 54%;
+    height:29vh;
+    border: 5px solid rgba(255, 255, 255, 0.671);
+    margin:  10px auto 10px auto ;
+    border-radius: 50%;
+    overflow: hidden;
+}
+main .circle img{
+    width: 100%;
+    height:100%;
+}
+.around{
+    animation: round 2.5s linear infinite;
+    
+}
+@keyframes round{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+main .song{
+    width: 80%;
+    /* border: 2px solid white; */
+    margin: 0px auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color:#fff;
+    
+}
+main .song h2{
+    font-size:16px;
+    opacity: 0.9;
+}
+main .song h4{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size:10px;
+    opacity: 0.7;
+}
+main .time{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+main .seek{
+    width:100%;
+    height:4px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+main .seek .bar{
+    position: relative;
+    width: 90%;
+    height:100%;
+    background-color: black;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    z-index:1;
+    cursor: pointer;
+}
+main .seek .bar .seek1{
+    position: absolute;
+    transition: all 1s linear;
+    width: 0%;
+    height:4px;
+    background-color: aqua;
+    z-index: 5;
+    border-radius: 10px;
+}
+footer{
+    color:white;
+    margin-top:20px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer .btn{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* footer .btn button i{
+    transition: all 3s linear;
+} */
+footer .btn button{
+    background-color: black;
+    cursor: pointer;
+    color:#fff;
+    border:none;
+    width:100%;
+    height:100%;
+}
+.volume{
+    margin-top:10px;
+    margin-left:20px;
+    /* box-sizing: border-box;
+    overflow: hidden;
+    cursor:pointer; */
+}
+.volume button{
+        width:40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;   
+        color:white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+}
+.volume input{
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+.slider{
+    /* transform: translate(-100%); */
+    width:25%;
+    height:90vh;
+    /* border:2px solid white; */
+    background-color:#878585;
+    border-radius:10px;
+    box-shadow: rgb(0, 0 ,0, 0.5);
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: none;
+    /* opacity: 0; */
+    transition: all 0.2s linear;
+}
+.header1{
+    display: flex;
+}
+.header1 .crossIcon i{
+    cursor: pointer;
+    padding-left:15px;
+    padding-top:10px;
+}
+.circle1{
+    width: 43%;
+    height:23vh;
+    border: 5px solid rgba(255, 255, 255, 0.671);
+    margin:  0px auto 10px auto ;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circle1 img{
+    width: 100%;
+    height:100%;
+}
+.slider .songList{
+    margin:15px 15px;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    text-transform:capitalize;
+}
+.slider .songList .songNames{
+    margin-top:5px;
+}
+.slider .songList .iconPlayAndAdd button{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: black;
+    color:white;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.repeat button{
+    position: absolute;
+    right:10px;
+    bottom:43px;
+    color:white;
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
